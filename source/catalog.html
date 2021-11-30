@@ -151,11 +151,54 @@
           <p class="photo-editor__title">Выкладывайте все, что накопилось в телефоне!</p>
         </header>
         <div class="photo-iditor__form">
-          <form class="form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
-
+          <form class="upload-form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+            <input type="file" id="image" name="image">
+            <label class="upload-form__image" for="image" aria-label="Загрузите фотографию"></label>
+            <!--Я не поняла, как они должны фото загружать-->
+            <div class="upload-form__controls">
+              <div class="upload-form__filters-buttons">
+                <button class="upload-form__filter-button upload-form__filter-button--current" type="button" aria-label="Обрезка"></button>
+                <button class="upload-form__filter-button" type="button" aria-label="Заливка"></button>
+                <button class="upload-form__filter-button" type="button" aria-label="Контрастность"></button>
+              </div>
+              <div class="upload-form__filter"></div>
+              <!--Тут бегунок-->
+              <div class="upload-form__buttons">
+                <button class="upload-form__button" type="submit">Запостить</button>
+                <button class="upload-form__button" type="reset">Отмена</button>
+              </div>
+            </div>
           </form>
         </div>
       </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="logo-footer">
+            <img src="img/logo-pink-grey.png" width="145" height="40" alt="Логотип Пинк">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="socil__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы в YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <img src="img/html-academy-icon.svg" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
