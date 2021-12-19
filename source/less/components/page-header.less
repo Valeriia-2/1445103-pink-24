@@ -4,10 +4,37 @@
   background-position: left;
   background-repeat: no-repeat;
   color: @white;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-title {
   font-size: 24px;
   font-weight: 300;
   line-height: 32.68px;
+}
+
+.page-header__logo {
+  height: 66px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    width: 150px;
+  }
 }
