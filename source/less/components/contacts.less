@@ -1,12 +1,27 @@
 .contacts {
   color: @red;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contacts__title {
   font-size: 24px;
   font-weight: 300;
   line-height: 28.8px;
+  text-align: center;
   color: @main-font-and-bg;
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item--location {
+    order: 2;
+  }
+
+  .contacts__item--email {
+    order: 3;
+  }
 }
 
 .phone__text {
