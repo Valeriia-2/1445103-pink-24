@@ -1,3 +1,33 @@
+.photo-editor-title-wrapper {
+  text-align: center;
+  height: 300px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 41px;
+}
+
+@media (min-width: @tablet-width) {
+  .upload-form {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload-form {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
 .upload-form__button {
   font-size: 18px;
   font-weight: 700;
