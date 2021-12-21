@@ -3,49 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+   <!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="logo" href="index.html">
-        <img src="img/pink.svg" width="74" height="23" alt="Лого pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-      </nav>
-      <div class="header-title__wrapper">
-        <h1 class="header-title">Фотографии пользователей</h1>
+      <div class="page-header__nav-wrapper">
+        <div class="main-nav__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img src="img/pink.svg" width="74" height="23" alt="Лого pink">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item  main-nav__item--active">
+                <a class="main-nav__link">
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
+        <div class="header-title__wrapper">
+          <h1 class="header-title">Фотографии пользователей</h1>
+        </div>
     </header>
     <main class="page-main">
       <div class="subtitle-wrapper">
-        <p class="subtitle">Взгляните на фотографии, которые выкладывают пользователи!</p>
-        <p class="subtitle">Видите, как не хватает ваших?</p>
+        <p class="subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <section class="gallery">
         <h2 class="visually-hidden">Фото от пользователей приложения</h2>
@@ -63,96 +69,100 @@
             </div>
           </figcaption>
         </figure>
-        <figure class="gallery__photo photo">
-          <img class="photo__image image">
-          <figcaption class="photo__content">
-            <p class="photo__author">
-              <b class="photo__author-name">Левон</b>
-              <time class="photo__time" datetime="2021-11-30T03:00">(5 часов назад)</time>
-            </p>
-            <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo__likes">
-              <button class="photo__likes-button" type="button"></button>
-              <span class="photo__likes-count">Нравится: 356</span>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__photo photo">
-          <img class="photo__image image">
-          <figcaption class="photo__content">
-            <p class="photo__author">
-              <b class="photo__author-name">Антон</b>
-              <time class="photo__time" datetime="2021-11-30T03:00">(12 часов назад)</time>
-            </p>
-            <p class="photo__text">Соседи будут рады!</p>
-            <div class="photo__likes">
-              <button class="photo__likes-button" type="button"></button>
-              <span class="photo__likes-count">Нравится: 666</span>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__photo photo">
-          <img class="photo__image image">
-          <figcaption class="photo__content">
-            <p class="photo__author">
-              <b class="photo__author-name">Борис</b>
-              <time class="photo__time" datetime="2021-11-30T03:00">(20 часов назад)</time>
-            </p>
-            <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo__likes">
-              <button class="photo__likes-button" type="button"></button>
-              <span class="photo__likes-count">Нравится: 215</span>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__photo photo">
-          <img class="photo__image image">
-          <figcaption class="photo__content">
-            <p class="photo__author">
-              <b class="photo__author-name">Сергей</b>
-              <time class="photo__time" datetime="2021-11-30T03:00">(25 часов назад)</time>
-            </p>
-            <p class="photo__text">Самая кубанская в мире!</p>
-            <div class="photo__likes">
-              <button class="photo__likes-button" type="button"></button>
-              <span class="photo__likes-count">Нравится: 4</span>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__photo photo">
-          <img class="photo__image image">
-          <figcaption class="photo__content">
-            <p class="photo__author">
-              <b class="photo__author-name">Максим</b>
-              <time class="photo__time" datetime="2021-11-30T03:00">(40 часов назад)</time>
-            </p>
-            <p class="photo__text">Где снег-то?</p>
-            <div class="photo__likes">
-              <button class="photo__likes-button" type="button"></button>
-              <span class="photo__likes-count">Нравится: 150</span>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__photo photo">
-          <img class="photo__image image">
-          <figcaption class="photo__content">
-            <p class="photo__author">
-              <b class="photo__author-name">Надежда</b>
-              <time class="photo__time" datetime="2021-11-30T03:00">(45 часов назад)</time>
-            </p>
-            <p class="photo__text">Всем GM и взаимные лайки!</p>
-            <div class="photo__likes">
-              <button class="photo__likes-button" type="button"></button>
-              <span class="photo__likes-count">Нравится: 2560</span>
-            </div>
-          </figcaption>
-        </figure>
+        <div class="gallery__photo-wrapper">
+          <figure class="gallery__photo photo">
+            <img class="photo__image image">
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Левон</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(5 часов назад)</time>
+              </p>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button"></button>
+                <span class="photo__likes-count">Нравится: 356</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <img class="photo__image image">
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Антон</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(12 часов назад)</time>
+              </p>
+              <p class="photo__text">Соседи будут рады!</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button"></button>
+                <span class="photo__likes-count">Нравится: 666</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <img class="photo__image image">
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Борис</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(20 часов назад)</time>
+              </p>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button"></button>
+                <span class="photo__likes-count">Нравится: 215</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <img class="photo__image image">
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Сергей</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(25 часов назад)</time>
+              </p>
+              <p class="photo__text">Самая кубанская в мире!</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button"></button>
+                <span class="photo__likes-count">Нравится: 4</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <img class="photo__image image">
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Максим</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(40 часов назад)</time>
+              </p>
+              <p class="photo__text">Где снег-то?</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button"></button>
+                <span class="photo__likes-count">Нравится: 150</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <img class="photo__image image">
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Надежда</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(45 часов назад)</time>
+              </p>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button"></button>
+                <span class="photo__likes-count">Нравится: 2560</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
       </section>
       <section class="photo-editor">
         <header class="photo-editor__header">
           <h2 class="visually-hidden">Добавить свою фотографию</h2>
-          <p class="photo-editor__title">Затмите их всех!</p>
-          <p class="photo-editor__title">Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="photo-editor-title-wrapper">
+            <p class="photo-editor__title">Затмите их всех!</p>
+            <p class="photo-editor__title">Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
         </header>
         <div class="photo-iditor__form">
           <form class="upload-form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
@@ -168,7 +178,7 @@
               <div class="upload-form__filter"></div>
               <!--Тут бегунок-->
               <div class="upload-form__buttons">
-                <button class="upload-form__button" type="submit">Запостить</button>
+                <button class="upload-form__button upload-form__button--active" type="submit">Запостить</button>
                 <button class="upload-form__button" type="reset">Отмена</button>
               </div>
             </div>

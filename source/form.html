@@ -3,18 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Конкурс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="logo" href="index.html">
-        <img src="img/pink.svg" width="74" height="23" alt="Лого pink">
-      </a>
+    <div class="page-header__nav-wrapper">
+      <div class="main-nav__logo-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/pink.svg" width="74" height="23" alt="Лого pink">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
@@ -37,7 +42,9 @@
               </a>
             </li>
           </ul>
+        </div>
       </nav>
+    </div>
       <div class="header-title__wrapper">
         <h1 class="header-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>

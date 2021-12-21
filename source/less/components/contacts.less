@@ -1,24 +1,72 @@
 .contacts {
   color: @red;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contacts__title {
+  font-size: 24px;
+  font-weight: 300;
   line-height: 28.8px;
+  text-align: center;
   color: @main-font-and-bg;
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item--location {
+    order: 2;
+  }
+
+  .contacts__item--email {
+    order: 3;
+  }
 }
 
 .phone__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.51px;
   color: @main-font-and-bg;
+}
+
+.phone__number {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32.68px;
+  color: @red;
 }
 
 .email__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.51px;
   color: @main-font-and-bg;
+}
+
+.email__email {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32.68px;
+  color: @red;
 }
 
 .location__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.51px;
   color: @main-font-and-bg;
 }
 
-.copyright {
+.location__address {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32.68px;
+  color: @red;
+}
+
+.copyright__text {
+  line-height: 18px;
   color: @main-font-and-bg;
 }
