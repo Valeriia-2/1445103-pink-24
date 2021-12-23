@@ -1,3 +1,57 @@
+.form-registration {
+  max-width: 940px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-flow: row wrap;
+  }
+}
+
+.form-registration__credentials-wrapper {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 434px;
+  }
+}
+
+.form-registration__achievements-wrapper {
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+}
+
+.form-registration__contacts-wrapper {
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+}
+
+.form-registration__app-wrapper {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.form-registration__emotions-wrapper {
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+}
+
+.form-registration__submit-wrapper {
+  @media (min-width: @tablet-width) {
+    order: 6;
+  }
+}
+
 .form-registration__achievements {
   background-color: @bg-color-main;
 }
