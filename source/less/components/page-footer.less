@@ -1,4 +1,20 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 71px;
+  }
+}
+
 .page-footer__wrapper {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +28,19 @@
   }
 }
 
-.copyright__text {
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.page-footer__copyright-text {
+  margin-right: 15px;
   line-height: 18px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 13px;
+    font-size: 18px;
+  }
 }
