@@ -3,10 +3,60 @@
   color: @white;
 }
 
+.info__download-button {
+  color: @white;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border-color: @white;
+  padding: 15px 38px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 29px;
+  line-height: 18px;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    padding: 15px 32px;
+  }
+}
+
 .info__list {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-top: 31px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 67px;
+    margin-bottom: 56px;
+  }
+}
+
+.info__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 56px;
+  height: 56px;
+}
+
+.info__item {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .info__slogan {
@@ -15,13 +65,14 @@
   line-height: 28.8px;
 }
 
-.info__download-button {
-  font-size: 18px;
-  font-weight: 700;
-  color: @white;
-}
-
 .info__note {
   font-weight: 300;
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

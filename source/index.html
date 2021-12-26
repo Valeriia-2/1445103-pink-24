@@ -57,20 +57,20 @@
             <img class="info__image" src="img/info-phone.png" width="320" height="286" alt="Приложение в телефоне">
           </div>
           <div class="info__content-wrapper">
-            <a href="https://www.apple.com/ru/app-store/" class="info__download-button">Скачать приложение</a>
+            <a class="info__download-button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="info__list">
               <li class="info__item">
-                <a href="https://www.apple.com/ru/app-store/" class="info__link">
+                <a class="info__link" href="https://www.apple.com/ru/app-store/" class="info__link">
                   <img src="img/apple-logo.png" width="47" height="56" alt="Логотип Apple">
                 </a>
               </li>
               <li class="info__item">
-                <a href="https://play.google.com/store;?hl=ru&gl=US" class="info__link">
+                <a class="info__link" href="https://play.google.com/store;?hl=ru&gl=US" class="info__link">
                   <img src="img/android-logo.png" width="43" height="47" alt="Логотип Андроид">
                 </a>
               </li>
               <li class="info__item">
-                <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="info__link">
+                <a class="info__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="info__link">
                   <img src="img/microsoft-logo.png" width="44" height="41" alt="Логотип Windows">
                 </a>
               </li>
@@ -137,11 +137,17 @@
               </div>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
+          <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
-          </p>
+          </div>
+          <div class="reviews-arrows">
+            <button class="reviews-arrows__arrow-button reviews-arrows__arrow-button--prev" type="button" aria-label="Назад">
+            </button>
+            <button class="reviews-arrows__arrow-button reviews-arrows__arrow-button--prev" type="button" aria-label="Вперед">
+            </button>
+          </div>
         </div>
        </section>
        <section class="rates">
@@ -207,6 +213,7 @@
         <div class="map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sau!4v1640504642884!5m2!1sen!2sau" width="100%" height="200" style="border: 0;" allowfullscreen="" loading="lazy" title="Офи компании по адресу Большая Конюшенная 19/8"></iframe>
+          <div class="map__marker"></div>
         </div>
       </div>
     </section>
