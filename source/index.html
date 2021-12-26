@@ -12,14 +12,13 @@
     <header class="page-header">
       <div class="page-header__nav-wrapper">
         <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
-        <div class="main-nav__logo-wrapper">
+        <div class="page-header__logo-wrapper">
           <a class="page-header__logo">
             <img src="img/pink.svg" width="74" height="23" alt="Лого pink">
           </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link">
@@ -42,7 +41,6 @@
                 </a>
               </li>
             </ul>
-          </div>
         </nav>
       </div>
       <section class="info">
@@ -238,5 +236,21 @@
           </div>
         </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
