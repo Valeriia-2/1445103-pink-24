@@ -57,7 +57,7 @@
             <img class="info__image" src="img/info-phone.png" width="320" height="286" alt="Приложение в телефоне">
           </div>
           <div class="info__content-wrapper">
-            <a class="info__download-button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+            <a class="info__download-button button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="info__list">
               <li class="info__item">
                 <a class="info__link" href="https://www.apple.com/ru/app-store/" class="info__link">
@@ -81,34 +81,27 @@
       </section>
     </header>
     <main class="page-main">
-      <section class="advantages">
-        <div class="advantages__wrapper">
-            <h2 class="visually-hidden">Преимущества приложения</h2>
-            <div class="advantages__slogans">
-              <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-              <p class="advantages__slogan">Нам есть, что вам<br>предложить!</p>
-          </div>
-          <div class="advantages__block">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="advantages__image-wrapper">
-            <img class="advantages__image" src="img/advantages-image.jpg" width="157" height="320" alt="Всем привет">
-          </div>
-          </div>
-        </div>
-      </section>
+    <h2 class="visually-hidden">Преимущества приложения</h2>
+    <div class="page-main__titles">
+      <p class="page-main__title">Устали от серости мегаполиса?</p>
+      <p class="page-main__title">Нам есть, что вам<br>предложить!</p>
+    </div>
+    <section class="advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--first">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item advantages__item--second">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item advantages__item--third">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+      </ul>
+    </section>
       <section class="efficiency">
         <div class="efficiency__content-wrapper">
           <div class="efficiency__image-wrapper">
@@ -187,36 +180,36 @@
         </div>
        </section>
     </main>
-    <section class="contacts-section">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <dl class="page-footer__contacts contacts">
+        <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
+        <dl class="contacts-list">
           <div class="contacts__item contacts__item--phone">
-            <dt class="phone__text">Звоните:</dt>
-            <dd class="phone__description">
-              <a class="phone__number" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <dt class="contacts__list-term">Звоните:</dt>
+            <dd class="contacts__list-description">
+              <a class="contacts__number contacts__list-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </dd>
           </div>
           <div class="contacts__item contacts__item--email">
-            <dt class="email__text">Пишите:</dt>
-            <dd class="email__description">
-              <a class="email__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <dt class="contacts__list-term">Пишите:</dt>
+            <dd class="contacts__list-description">
+              <a class="contacts__email contacts__list-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </dd>
           </div>
           <div class="contacts__item contacts__item--location">
-            <dt class="location__text">Приезжайте в гости:</dt>
-            <dd class="location__description">
-              <address class="location__address">ул. Большая<br>Конюшенная, 19/8</address>
+            <dt class="contacts__list-term">Приезжайте в гости:</dt>
+            <dd class="contacts__list-description">
+              <address class="contacts__address contacts__list-link">ул. Большая<br>Конюшенная, 19/8</address>
             </dd>
           </div>
         </dl>
-        <div class="map">
-          <h2 class="visually-hidden">Как до нас добраться</h2>
-          <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sau!4v1640504642884!5m2!1sen!2sau" width="100%" height="200" style="border: 0;" allowfullscreen="" loading="lazy" title="Офи компании по адресу Большая Конюшенная 19/8"></iframe>
-          <div class="map__marker"></div>
-        </div>
       </div>
     </section>
+    <div class="map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sau!4v1640504642884!5m2!1sen!2sau" width="100%" height="200" style="border: 0;" allowfullscreen="" loading="lazy" title="Офи компании по адресу Большая Конюшенная 19/8"></iframe>
+    <div class="map__marker"></div>
     <footer class="page-footer">
         <div class="page-footer__wrapper">
           <div class="page-footer__logo">

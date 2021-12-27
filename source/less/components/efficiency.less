@@ -1,13 +1,26 @@
-.efficiency__content-wrapper {
-  margin: 0 auto;
-}
-
 .efficiency {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @bg-color-main;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .efficiency {
-    display: block;
+.efficiency__content-wrapper {
+  margin: 0 auto;
+  padding: 75px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
