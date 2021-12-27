@@ -13,6 +13,8 @@
 }
 
 .form-registration__credentials-wrapper {
+  padding-bottom: 43px;
+
   @media (min-width: @tablet-width) {
     order: 1;
   }
@@ -23,6 +25,10 @@
 }
 
 .form-registration__achievements-wrapper {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: @bg-color-main;
+
   @media (min-width: @tablet-width) {
     order: 4;
   }
@@ -33,6 +39,9 @@
 }
 
 .form-registration__contacts-wrapper {
+  padding-top: 35px;
+  padding-bottom: 36px;
+
   @media (min-width: @tablet-width) {
     order: 3;
   }
@@ -43,12 +52,19 @@
 }
 
 .form-registration__app-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: @bg-color-main;
+
   @media (min-width: @tablet-width) {
     order: 2;
   }
 }
 
 .form-registration__emotions-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   @media (min-width: @tablet-width) {
     order: 5;
   }
@@ -59,26 +75,59 @@
 }
 
 .form-registration__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     order: 6;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
-.form-registration__achievements {
-  background-color: @bg-color-main;
+.form-registration__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: 2px solid @light-grey;
+    border-radius: 2px;
+  }
 }
 
-.form-registration__app {
-  background-color: @bg-color-main;
+.form-registration__credentials {
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
-.form-registration__label,
-.form-registration__legend-text {
+.form-registration__label {
   color: @red;
 }
 
-.form-registration__legend-text {
+.form-registration__legend {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 24px;
+  width: 100%;
   line-height: 18px;
+  color: @red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-registration__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .form-registration__input {
@@ -102,6 +151,9 @@
 }
 
 .form-registration__button {
-  font-size: 18px;
-  font-weight: 700;
+  width: 276px;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
 }
