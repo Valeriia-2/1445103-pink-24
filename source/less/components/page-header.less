@@ -29,9 +29,14 @@
 .page-header__logo {
   display: block;
   height: 66px;
+  background-color: fade(@black, 30%);
 
   @media (min-width: @tablet-width) {
     height: 109px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
   }
 }
 
@@ -52,6 +57,8 @@
     grid-template-columns: 150px auto;
     gap: 20px;
     margin: 0 auto;
+    background-color: fade(@black, 30%);
+    background-position: 100%;
   }
 
   .page-header__logo {

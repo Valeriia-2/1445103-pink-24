@@ -4,11 +4,14 @@
 }
 
 .info__content-wrapper {
+  margin: 0 auto;
   padding: 340px 20px 30px;
 }
 
 .info__download-button {
   color: @white;
+  display: block;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
@@ -19,9 +22,11 @@
   border-radius: 29px;
   line-height: 18px;
   background-color: transparent;
+  max-width: 260px;
 
   @media (min-width: @tablet-width) {
     padding: 15px 48px;
+    width: 300px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,8 +71,18 @@
 .info__slogan {
   font-size: 24px;
   font-weight: 300;
-  line-height: 28.8px;
+  line-height: 29px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .info__note {
