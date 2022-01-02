@@ -10,31 +10,52 @@
   padding: 88px 20px 320px;
   list-style: none;
   background-color: @bg-color-main;
+  background-image: url("../img/backgrounds/iphone-mobile@1x.jpg");
+  background-position: 50% 590px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/iphone-mobile@2x.jpg");
+    background-size: 157px 320px;
+  }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: flex-end;
     padding: 75px 20px 45px;
+    background-image: url("../img/backgrounds/iphone-tablet@1x.jpg");
+    background-size: 268px 547px;
+    background-position: 7% 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/iphone-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    background-image: none;
   }
 }
 
 .advantages__item {
+  margin-left: 30px;
+  margin-right: 30px;
   width: 280px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 308px;
+    margin-left: 300px;
+    width: 310px;
     line-height: 24px;
     text-align: left;
   }
 
   @media (min-width: @desktop-width) {
+    margin-right: 35px;
+    margin-left: 35px;
     width: 240px;
     text-align: center;
   }
