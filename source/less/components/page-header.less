@@ -1,9 +1,11 @@
 .page-header {
   position: relative;
+  margin: 0 auto;
   background-color: @bg-color-header;
   background-image: url("../img/bg-header.png");
-  background-position: top;
+  background-position: 50% 0;
   background-repeat: no-repeat;
+  background-size: contain;
   color: @white;
   display: flex;
   flex-direction: column;
@@ -53,10 +55,13 @@
 
 @media (min-width: @desktop-width) {
   .page-header__nav-wrapper {
-    display: grid;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /*display: grid;
     grid-template-columns: 150px auto;
-    gap: 20px;
-    margin: 0 auto;
+    gap: 20px;*/
     background-color: fade(@black, 30%);
     background-position: 100%;
   }
@@ -64,5 +69,6 @@
   .page-header__logo {
     width: auto;
     max-width: 155px;
+    margin-right: 165px;
   }
 }
