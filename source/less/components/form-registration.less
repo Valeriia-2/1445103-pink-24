@@ -1,6 +1,5 @@
 .form-registration {
   max-width: 940px;
-  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -131,9 +130,26 @@
 }
 
 .form-registration__input {
+  display: block;
+  padding: 14px 20px 15px;
   font-size: 18px;
+  box-sizing: border-box;
+  min-height: 59px;
+  width: 100%;
+  border-radius: 1px;
+  border: 2px solid @light-grey;
   color: @main-font-and-bg;
 }
+
+.form-registration__input:hover {
+  border-color: @main-font-and-bg;
+}
+
+.form-registration__input:focus {
+  border-color: @red;
+}
+/* Тут у меня не получается. Я опять забыла, что подразумевается под active в стайлгайде, я уже пробовала и active
+и focus, и все равно ничего не работает, когда проверяю*/
 
 .form-registration__label-checkbox {
   font-size: 18px;
