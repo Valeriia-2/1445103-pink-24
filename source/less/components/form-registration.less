@@ -76,6 +76,7 @@
 .form-registration__submit-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 29px 20px 15px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -110,6 +111,7 @@
 
 .form-registration__label {
   color: @red;
+  text-transform: uppercase;
 }
 
 .form-registration__legend {
@@ -153,17 +155,85 @@
 
 .form-registration__label-checkbox {
   font-size: 18px;
+  position: relative;
+  display: block;
+  padding-left: 69px;
+  padding-top: 5px;
+  padding-bottom: 4px;
   color: @main-font-and-bg;
+  cursor: pointer;
+}
+
+.form-registration__label-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid @light-grey;
+  border-radius: 2px;
+  background-color: @white;
+}
+
+.form-registration__label-checkbox::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  transform: rotate(-45deg);
+  width: 21px;
+  height: 10px;
+  border-left: 2px solid @red;
+  border-bottom: 2px solid @red;
 }
 
 .form-registration__label-radio {
   font-size: 18px;
   color: @main-font-and-bg;
+  position: relative;
+  display: block;
+  padding-left: 69px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+.form-registration__label-radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @light-grey;
+  border-radius: 50%;
+  background-color: @white;
+}
+
+.form-registration__label-radio::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: @red;
 }
 
 .form-registration__textarea {
   font-size: 18px;
   color: @main-font-and-bg;
+  margin-top: 16px;
+  padding: 14px 19px;
+  min-height: 200px;
+  resize: vertical;
 }
 
 .form-registration__button {
