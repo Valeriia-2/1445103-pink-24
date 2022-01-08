@@ -25,7 +25,26 @@
   box-sizing: border-box;
   width: 280px;
   height: 374px;
+  background-image: url("../img/catalog/photo-winter-mobile@1x.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
   cursor: pointer;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/photo-winter-mobile@2x.jpg");
+    background-size: 280px 374px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/catalog/photo-winter@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/photo-winter@2x.jpg");
+      background-size: 300px 400px;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     width: 300px;
