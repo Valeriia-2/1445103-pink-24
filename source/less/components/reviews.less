@@ -1,3 +1,19 @@
+.reviews {
+  position: relative;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 45px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 185px;
+    padding-bottom: 40px;
+  }
+}
+
+.reviews__item {
+  margin: 0 20px;
+}
+
 .reviews__author-name {
   font-size: 18px;
   font-weight: 700;
@@ -18,7 +34,15 @@
     flex-direction: column;
   }
 
-  .reviews__autro-information-wrapper {
+  .reviews__author-information-wrapper {
     order: 2;
   }
+}
+
+.reviews-arrows {
+  display: none;
+}
+
+.reviews__text {
+  margin: 0;
 }
