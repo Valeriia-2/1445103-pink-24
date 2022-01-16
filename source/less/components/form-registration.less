@@ -76,7 +76,7 @@
 .form-registration__submit-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 29px 20px 15px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -93,7 +93,7 @@
 .form-registration__fieldset {
   position: relative;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -150,8 +150,6 @@
 .form-registration__input:focus {
   border-color: @red;
 }
-/* Тут у меня не получается. Я опять забыла, что подразумевается под active в стайлгайде, я уже пробовала и active
-и focus, и все равно ничего не работает, когда проверяю*/
 
 .form-registration__label-checkbox {
   font-size: 18px;
@@ -230,10 +228,11 @@
 .form-registration__textarea {
   font-size: 18px;
   color: @main-font-and-bg;
+  width: 100%;
   margin-top: 16px;
-  padding: 14px 19px;
-  min-height: 200px;
-  resize: vertical;
+  padding: 0;
+  height: 200px;
+  resize: none;
 }
 
 .form-registration__button {
