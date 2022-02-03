@@ -13,17 +13,16 @@
   margin: 0;
 }
 
-@media (min-width: @tablet-width) {
-  .gallery__photo-wrapper {
+.gallery__photo-wrapper {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 300px 300px;
     gap: 20px;
     width: 620px;
+    //padding: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .gallery__photo-wrapper {
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     gap: 20px;
